@@ -12,7 +12,7 @@
                     {{-- Task: add a condition to show correct text --}}
                     {{-- If user is logged in, show their email --}}
                     @if (Auth::user())
-                        Yes, I am logged in as [{{Auth::user()->email}}].
+                        Yes, I am logged in as {{Auth::user()->email}}.
                     @else
                         No, I am not logged in.
                     @endif
@@ -23,4 +23,3 @@
         </div>
     </div>
 </x-app-layout>
-
